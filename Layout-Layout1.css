@@ -1,0 +1,45 @@
+/* *means to select everything. With box-sizing, and border-box you it tells css to ignore the border. */
+
+*{
+  box-sizing: border-box;
+}
+
+header,footer{
+  height: 100px;
+  border:3px solid black;
+  clear: both;
+}
+
+section {
+  height: 300px;
+  width: 33.333%;
+  border:3px solid black;
+  float:left;
+}
+
+.yellow img{
+  height: 320px;
+  width: 327px;
+  float: left;
+}
+
+/* screen means 0 */
+@media screen and (max-width: 420px) {
+  section {
+    float: none;
+    color: #4fa1e3;
+    width: auto;
+  }
+}
+
+@media screen and (max-width: 420px) {
+  footer{
+    display: none;
+  }
+}
+
+@media (min-width: 420px) and (max-width:1024px){
+  header, footer {
+    background: #666ce3;
+  }
+}
